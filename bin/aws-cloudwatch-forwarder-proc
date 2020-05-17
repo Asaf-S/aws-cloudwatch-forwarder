@@ -4,15 +4,15 @@
 
 var rfr = require("rfr")
 
-var programInitializer = rfr("lib/programInitializer")(
+var programInitializer = rfr("../lib/programInitializer")(
     process,
-    rfr("lib/configReader")(),
-    rfr("lib/applicationExecutor")(require("child_process")),
-    rfr("lib/inputRepositoryFactory")(),
-    rfr("lib/forwarderFactory")()
+    rfr("../lib/configReader")(),
+    rfr("../lib/applicationExecutor")(require("child_process")),
+    rfr("../lib/inputRepositoryFactory")(),
+    rfr("../lib/forwarderFactory")()
 )
 
-rfr("lib/program")(programInitializer)
+rfr("../lib/program")(programInitializer)
     .run()
     .then(exitCode => {
         process.exit(exitCode)
