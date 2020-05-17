@@ -1,5 +1,5 @@
 var rfr = require("rfr")
-var programInitializer = rfr("lib/programInitializer")
+var programInitializer = rfr("node_modules/aws-cloudwatch-forwarder/lib/programInitializer")
 
 describe("programInitializer", () => {
     var initializer = null

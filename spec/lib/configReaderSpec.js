@@ -1,5 +1,5 @@
 var rfr = require("rfr")
-var configReader = rfr("lib/configReader")
+var configReader = rfr("node_modules/aws-cloudwatch-forwarder/lib/configReader")
 
 describe("configReader", () => {
     var reader = null

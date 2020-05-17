@@ -1,5 +1,5 @@
 var rfr = require("rfr")
-var applicationExecutor = rfr("lib/applicationExecutor")
+var applicationExecutor = rfr("node_modules/aws-cloudwatch-forwarder/lib/applicationExecutor")
 
 describe("applicationExecutor", ()  =>{
     var executor = null

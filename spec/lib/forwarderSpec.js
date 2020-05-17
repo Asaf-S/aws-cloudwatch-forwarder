@@ -1,6 +1,6 @@
 var rfr = require("rfr")
 var promise = require("the-promise-factory")
-var forwarderFn = rfr("lib/forwarder")
+var forwarderFn = rfr("node_modules/aws-cloudwatch-forwarder/lib/forwarder")
 
 describe("forwarder", () => {
     var forwarder = null

@@ -1,5 +1,5 @@
 var rfr = require("rfr")
-var calculator = rfr("lib/logStreamNameCalculator")
+var calculator = rfr("node_modules/aws-cloudwatch-forwarder/lib/logStreamNameCalculator")
 
 describe("logStreamNameCalculator", () => {
     it ("is correct", () => {

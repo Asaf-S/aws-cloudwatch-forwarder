@@ -1,6 +1,6 @@
 var rfr = require("rfr");
 var async = require("async")
-var awsForwarderService = rfr("lib/awsForwarderService")
+var awsForwarderService = rfr("node_modules/aws-cloudwatch-forwarder/lib/awsForwarderService")
 
 describe("awsForwarderService", function() {
     var initConfig = {

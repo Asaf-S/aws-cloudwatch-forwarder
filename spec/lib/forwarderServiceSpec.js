@@ -1,6 +1,6 @@
 var rfr = require("rfr")
 var promise = require("the-promise-factory")
-var forwarderService = rfr("lib/forwarderService")
+var forwarderService = rfr("node_modules/aws-cloudwatch-forwarder/lib/forwarderService")
 
 describe("forwarderService", () => {
     var seededConfig = { name: "myconfig" }

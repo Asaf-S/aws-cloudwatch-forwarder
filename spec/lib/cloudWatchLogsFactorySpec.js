@@ -1,5 +1,5 @@
 var rfr = require("rfr")
-var cloudWatchLogsFactory = rfr("lib/cloudWatchLogsFactory")
+var cloudWatchLogsFactory = rfr("node_modules/aws-cloudwatch-forwarder/lib/cloudWatchLogsFactory")
 
 describe("cloudWatchLogsFactory", () => {
     var factory = null

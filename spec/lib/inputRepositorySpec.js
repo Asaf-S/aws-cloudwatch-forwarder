@@ -1,5 +1,5 @@
 var rfr = require("rfr")
-var inputRepository = rfr("lib/inputRepository")
+var inputRepository = rfr("node_modules/aws-cloudwatch-forwarder/lib/inputRepository")
 
 describe("inputRepository", () => {
     var rlCallbacks = {}
