@@ -4,15 +4,15 @@
 
 var rfr = require("rfr")
 
-var programInitializer = rfr("../lib/programInitializer")(
+var programInitializer = rfr("node_modules/aws-cloudwatch-forwarder/lib/programInitializer")(
     process,
-    rfr("../lib/configReader")(),
-    rfr("../lib/applicationExecutor")(require("child_process")),
-    rfr("../lib/inputRepositoryFactory")(),
-    rfr("../lib/forwarderFactory")()
+    rfr("node_modules/aws-cloudwatch-forwarder/lib/configReader")(),
+    rfr("node_modules/aws-cloudwatch-forwarder/lib/applicationExecutor")(require("child_process")),
+    rfr("node_modules/aws-cloudwatch-forwarder/lib/inputRepositoryFactory")(),
+    rfr("node_modules/aws-cloudwatch-forwarder/lib/forwarderFactory")()
 )
 
-rfr("../lib/program")(programInitializer)
+rfr("node_modules/aws-cloudwatch-forwarder/lib/program")(programInitializer)
     .run()
     .then(exitCode => {
         process.exit(exitCode)
